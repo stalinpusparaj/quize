@@ -1,0 +1,138 @@
+[
+  {
+    "id": "a1b2c3d4-0001-4000-8000-000000000001",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide01Title.tsx",
+    "title": "GrowthOS™ — The AI Business MRI™",
+    "description": "Title slide with hero image and key beta metrics",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0002-4000-8000-000000000002",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide02Problem.tsx",
+    "title": "The Problem: Businesses Are Flying Blind",
+    "description": "Four core pain points with disconnected-tools visual",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0003-4000-8000-000000000003",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide03HiddenCost.tsx",
+    "title": "The Hidden Cost of Guesswork",
+    "description": "Three big-number stat cards showing cost of inaction",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0004-4000-8000-000000000004",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide04WhatsMissing.tsx",
+    "title": "What's Missing: A Unified Business Scan",
+    "description": "Gap analysis with solution flow diagram",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0005-4000-8000-000000000005",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide05Introducing.tsx",
+    "title": "Introducing GrowthOS™",
+    "description": "Product introduction with three feature cards",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0006-4000-8000-000000000006",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide06HowItWorks.tsx",
+    "title": "How It Works: The 3-Step Scan",
+    "description": "Scan, Analyse, Prescribe — three large step cards",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0007-4000-8000-000000000007",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide07Dimensions.tsx",
+    "title": "The 10 Growth Dimensions",
+    "description": "2x5 numbered grid of all diagnostic dimensions",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0008-4000-8000-000000000008",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide08WhoWeServe.tsx",
+    "title": "Who We Serve",
+    "description": "2x2 grid: who, industries, revenue stage, pain profile",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0009-4000-8000-000000000009",
+    "position": 9,
+    "filepath": "src/pages/slides/Slide09MarketOpportunity.tsx",
+    "title": "Market Opportunity",
+    "description": "Three headline stats plus wedge and SAM callouts",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0010-4000-8000-000000000010",
+    "position": 10,
+    "filepath": "src/pages/slides/Slide10CustomerDiscovery.tsx",
+    "title": "Customer Discovery: What We Heard",
+    "description": "Featured quote plus three validation percentages",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0011-4000-8000-000000000011",
+    "position": 11,
+    "filepath": "src/pages/slides/Slide11PainPoints.tsx",
+    "title": "Validated Pain Points (Top 5)",
+    "description": "Horizontal bar chart showing top 5 pain points by frequency",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0012-4000-8000-000000000012",
+    "position": 12,
+    "filepath": "src/pages/slides/Slide12Personas.tsx",
+    "title": "The 5 Growth Personas",
+    "description": "Five persona cards side-by-side with colour-coded identities",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0013-4000-8000-000000000013",
+    "position": 13,
+    "filepath": "src/pages/slides/Slide13Traction.tsx",
+    "title": "Early Traction",
+    "description": "Five traction metrics: scans, completion, early access, calls, NPS",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0014-4000-8000-000000000014",
+    "position": 14,
+    "filepath": "src/pages/slides/Slide14Competitive.tsx",
+    "title": "Competitive Landscape",
+    "description": "Comparison table: HubSpot, survey tools, consultants vs GrowthOS",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0015-4000-8000-000000000015",
+    "position": 15,
+    "filepath": "src/pages/slides/Slide15Revenue.tsx",
+    "title": "Revenue Model",
+    "description": "Four-tier monetisation cards: Free, Pro, Done-With-You, White-Label",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0016-4000-8000-000000000016",
+    "position": 16,
+    "filepath": "src/pages/slides/Slide16GoToMarket.tsx",
+    "title": "Go-to-Market Strategy",
+    "description": "Four-phase GTM: partnerships, LinkedIn, agency, SEO/paid",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0017-4000-8000-000000000017",
+    "position": 17,
+    "filepath": "src/pages/slides/Slide17CTA.tsx",
+    "title": "Join the GrowthOS™ Early Access",
+    "description": "Dark closing slide with three contact cards",
+    "speakerNotes": ""
+  }
+]

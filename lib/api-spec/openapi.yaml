@@ -1,0 +1,304 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: GrowthOS AI Business MRI API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: survey
+    description: Survey submission and stats
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /survey/submit:
+    post:
+      operationId: submitSurvey
+      tags: [survey]
+      summary: Submit survey responses
+      description: Store a completed GrowthOS Business MRI survey submission
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SurveyInput"
+      responses:
+        "201":
+          description: Survey submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SurveySubmission"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /survey/stats:
+    get:
+      operationId: getSurveyStats
+      tags: [survey]
+      summary: Get aggregate survey statistics
+      description: Returns aggregate counts and breakdowns across all submissions
+      responses:
+        "200":
+          description: Survey statistics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SurveyStats"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error
+
+    SurveyInput:
+      type: object
+      required:
+        - name
+        - email
+        - phone
+        - consent
+      properties:
+        # Contact
+        name:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        website:
+          type: ["string", "null"]
+        linkedin:
+          type: ["string", "null"]
+        consent:
+          type: boolean
+        # New profile questions
+        userRole:
+          type: ["string", "null"]
+        businessExpertise:
+          type: ["string", "null"]
+        targetAudience:
+          type: ["string", "null"]
+        productService:
+          type: ["string", "null"]
+        # Section 1 – Business Profile
+        businessType:
+          type: ["string", "null"]
+        employees:
+          type: ["string", "null"]
+        revenueStage:
+          type: ["string", "null"]
+        monthlyVisitors:
+          type: ["string", "null"]
+        hasWebsite:
+          type: ["string", "null"]
+        # Section 2 – Lead Generation
+        leadSources:
+          type: array
+          items:
+            type: string
+        bestLeadSource:
+          type: ["string", "null"]
+        monthlyLeads:
+          type: ["string", "null"]
+        leadSatisfaction:
+          type: ["string", "null"]
+        # Section 3 – Website Experience
+        websiteFeatures:
+          type: array
+          items:
+            type: string
+        knowsConversionRate:
+          type: ["string", "null"]
+        websiteOptimization:
+          type: ["string", "null"]
+        websiteFrustrations:
+          type: array
+          items:
+            type: string
+        # Section 4 – CRM & Automation
+        crmTool:
+          type: ["string", "null"]
+        crmConnected:
+          type: ["string", "null"]
+        leadsAutoAdded:
+          type: ["string", "null"]
+        followUpAutomation:
+          type: array
+          items:
+            type: string
+        # Section 5 – Analytics
+        analyticsTools:
+          type: array
+          items:
+            type: string
+        knowsExitReason:
+          type: ["string", "null"]
+        knowsBestPage:
+          type: ["string", "null"]
+        # Section 6 – AI Adoption
+        aiTools:
+          type: array
+          items:
+            type: string
+        aiTrust:
+          type: ["string", "null"]
+        desiredAiFeature:
+          type: ["string", "null"]
+        # Section 7 – Pain Validation (open text)
+        biggestObstacle:
+          type: ["string", "null"]
+        desiredImprovement:
+          type: ["string", "null"]
+        websiteWish:
+          type: ["string", "null"]
+        # Section 8 – Buying Behavior
+        pastInvestments:
+          type: array
+          items:
+            type: string
+        marketingSpend:
+          type: ["string", "null"]
+        valueRating:
+          type: ["integer", "null"]
+        wantsEarlyAccess:
+          type: ["string", "null"]
+        openToInterview:
+          type: ["string", "null"]
+        # Discovery Engine extras
+        growthDreams:
+          type: array
+          items:
+            type: string
+        currentPain:
+          type: ["string", "null"]
+        websiteRole:
+          type: ["string", "null"]
+        aiOneThing:
+          type: ["string", "null"]
+        biggestProblem:
+          type: ["string", "null"]
+        futureVision:
+          type: ["string", "null"]
+        # Computed persona
+        growthPersona:
+          type: ["string", "null"]
+        # Client metadata
+        browser:
+          type: ["string", "null"]
+        device:
+          type: ["string", "null"]
+        os:
+          type: ["string", "null"]
+        language:
+          type: ["string", "null"]
+        timezone:
+          type: ["string", "null"]
+        country:
+          type: ["string", "null"]
+        utmSource:
+          type: ["string", "null"]
+        utmMedium:
+          type: ["string", "null"]
+        utmCampaign:
+          type: ["string", "null"]
+        referrer:
+          type: ["string", "null"]
+        sessionId:
+          type: ["string", "null"]
+        bookedCall:
+          type: ["string", "null"]
+        revenueOpportunity:
+          type: ["string", "null"]
+
+    SurveySubmission:
+      type: object
+      required:
+        - id
+        - createdAt
+      properties:
+        id:
+          type: integer
+        createdAt:
+          type: string
+        growthPersona:
+          type: ["string", "null"]
+
+    SurveyStats:
+      type: object
+      required:
+        - totalSubmissions
+        - businessTypeBreakdown
+        - employeeBreakdown
+        - topLeadSources
+        - topAiFeatures
+        - avgValueRating
+        - earlyAccessCount
+      properties:
+        totalSubmissions:
+          type: integer
+        businessTypeBreakdown:
+          type: array
+          items:
+            $ref: "#/components/schemas/StatEntry"
+        employeeBreakdown:
+          type: array
+          items:
+            $ref: "#/components/schemas/StatEntry"
+        topLeadSources:
+          type: array
+          items:
+            $ref: "#/components/schemas/StatEntry"
+        topAiFeatures:
+          type: array
+          items:
+            $ref: "#/components/schemas/StatEntry"
+        avgValueRating:
+          type: number
+        earlyAccessCount:
+          type: integer
+
+    StatEntry:
+      type: object
+      required:
+        - label
+        - count
+      properties:
+        label:
+          type: string
+        count:
+          type: integer

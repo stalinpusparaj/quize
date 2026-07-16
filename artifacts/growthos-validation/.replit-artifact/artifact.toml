@@ -1,0 +1,27 @@
+kind = "slides"
+previewPath = "/growthos-validation/"
+title = "GrowthOS™ Validation Deck"
+version = "1.0.0"
+id = "artifacts/growthos-validation"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/growthos-validation/" ]
+localPort = 23985
+
+[services.development]
+run = "pnpm --filter @workspace/growthos-validation run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/growthos-validation", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/growthos-validation/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23985"
+BASE_PATH = "/growthos-validation/"

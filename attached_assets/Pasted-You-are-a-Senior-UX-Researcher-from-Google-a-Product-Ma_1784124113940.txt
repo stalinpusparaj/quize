@@ -1,0 +1,540 @@
+You are a Senior UX Researcher from Google, a Product Manager from HubSpot, a Behavioral Psychologist, a Y Combinator Startup Advisor, a Product Marketing Expert, and a Conversion Rate Optimization Specialist.
+
+Your task is to design an interactive business validation survey for a startup called GrowthOS™.
+
+IMPORTANT
+
+This is NOT a product survey.
+
+We are NOT asking if users like the product.
+
+We are validating market demand, pain points, buying behavior, current tools, and willingness to adopt AI.
+
+The survey should feel like a premium business assessment rather than a boring questionnaire.
+
+Theme
+
+• Modern SaaS
+• Clean
+• Interactive cards
+• Glassmorphism
+• Mobile-first
+• Dark Mode
+• Progress bar
+• Estimated completion time: 3 minutes
+
+Every answer should animate.
+
+Store all responses in Google Sheets through Google Apps Script.
+
+------------------------------------------------
+
+SECTION 1
+
+BUSINESS PROFILE
+
+Questions
+
+1. What type of business do you own?
+
+Healthcare
+
+Agency
+
+SaaS
+
+Manufacturing
+
+Real Estate
+
+Education
+
+Finance
+
+Retail
+
+Consulting
+
+Other
+
+2. How many employees?
+
+Solo
+
+2-10
+
+11-25
+
+26-50
+
+50+
+
+3. Approximate annual revenue?
+
+Optional
+
+4. Monthly website visitors?
+
+0-500
+
+500-2K
+
+2K-10K
+
+10K-50K
+
+50K+
+
+5. Do you have a dedicated website?
+
+Yes
+
+No
+
+Landing page only
+
+Not yet
+
+------------------------------------------------
+
+SECTION 2
+
+LEAD GENERATION
+
+6. Where do most of your leads come from?
+
+Google Ads
+
+SEO
+
+Facebook
+
+Instagram
+
+LinkedIn
+
+WhatsApp
+
+Email
+
+Cold Outreach
+
+Referrals
+
+Events
+
+Marketplace
+
+Other
+
+7. Which source generates your best customers?
+
+8. Approximately how many leads do you get each month?
+
+9. Are you satisfied with your lead quality?
+
+Very satisfied
+
+Satisfied
+
+Neutral
+
+Not satisfied
+
+Very dissatisfied
+
+------------------------------------------------
+
+SECTION 3
+
+WEBSITE EXPERIENCE
+
+10. Does your website have:
+
+Landing Pages
+
+Contact Form
+
+Appointment Booking
+
+Live Chat
+
+WhatsApp
+
+Testimonials
+
+Google Reviews
+
+Pricing
+
+Videos
+
+Case Studies
+
+Blog
+
+FAQ
+
+Calculator
+
+Lead Magnet
+
+Analytics
+
+None
+
+11. Do you know your website conversion rate?
+
+Yes
+
+No
+
+12. Have you ever optimized your website for conversions?
+
+Never
+
+Sometimes
+
+Frequently
+
+13. What frustrates you the most?
+
+Low traffic
+
+Low conversions
+
+Poor design
+
+Slow speed
+
+No trust
+
+No analytics
+
+No landing pages
+
+Poor SEO
+
+Other
+
+------------------------------------------------
+
+SECTION 4
+
+CRM & AUTOMATION
+
+14. Do you currently use a CRM?
+
+No
+
+HubSpot
+
+Zoho
+
+Salesforce
+
+GoHighLevel
+
+Freshsales
+
+Pipedrive
+
+Other
+
+15. Is your website connected to your CRM?
+
+Yes
+
+Partially
+
+No
+
+16. Are leads automatically added?
+
+Always
+
+Sometimes
+
+Never
+
+17. Do you automate follow-ups?
+
+Email
+
+WhatsApp
+
+SMS
+
+No
+
+------------------------------------------------
+
+SECTION 5
+
+ANALYTICS
+
+18. Which analytics tools do you use?
+
+Google Analytics
+
+Search Console
+
+Microsoft Clarity
+
+Hotjar
+
+Looker
+
+Power BI
+
+CRM Reports
+
+None
+
+19. Can you identify why visitors leave your website?
+
+Yes
+
+No
+
+20. Can you identify your best-performing page?
+
+Yes
+
+No
+
+------------------------------------------------
+
+SECTION 6
+
+AI ADOPTION
+
+21. Do you currently use AI?
+
+ChatGPT
+
+Claude
+
+Gemini
+
+Copilot
+
+Perplexity
+
+None
+
+22. Would you trust an AI to analyze your business?
+
+Yes
+
+Maybe
+
+No
+
+23. Which AI feature interests you most?
+
+Lead qualification
+
+Website analysis
+
+Sales recommendations
+
+Marketing automation
+
+Competitor insights
+
+Revenue forecasting
+
+------------------------------------------------
+
+SECTION 7
+
+PAIN VALIDATION
+
+24. What is the single biggest obstacle preventing faster growth?
+
+(Open text)
+
+25. If you could instantly improve one area of your business, what would it be?
+
+(Open text)
+
+26. What information do you wish your website could tell you?
+
+(Open text)
+
+------------------------------------------------
+
+SECTION 8
+
+BUYING BEHAVIOR
+
+27. Have you ever paid for any of these?
+
+Website
+
+Landing Page
+
+SEO
+
+CRM
+
+Consultant
+
+Marketing Agency
+
+Business Coach
+
+Never
+
+28. Approximately how much have you invested in marketing during the last 12 months?
+
+<$1k
+
+$1k-$5k
+
+$5k-$20k
+
+$20k+
+
+29. If an AI platform could identify hidden revenue opportunities and give you a step-by-step action plan, how valuable would that be?
+
+Rate from 1-10
+
+30. Would you like early access to GrowthOS™?
+
+Yes
+
+Maybe
+
+No
+
+31. Would you be willing to join a 20-minute discovery interview to shape the product?
+
+Yes
+
+No
+
+------------------------------------------------
+
+FINAL STEP
+
+Collect
+
+Name
+
+Business Email
+
+Phone
+
+Website
+
+LinkedIn (optional)
+
+Consent checkbox
+
+------------------------------------------------
+
+SUCCESS PAGE
+
+Headline
+
+🎉 Thank You!
+
+Message
+
+Your feedback will directly influence the first version of GrowthOS™.
+
+As a thank you, you'll receive:
+
+✓ Early Access
+
+✓ Free AI Business Growth Report
+
+✓ Beta Pricing
+
+✓ Exclusive Product Updates
+
+Button
+
+Join Early Access
+
+------------------------------------------------
+
+GOOGLE SHEETS COLUMNS
+
+Timestamp
+
+Name
+
+Email
+
+Phone
+
+Website
+
+LinkedIn
+
+Business Type
+
+Employees
+
+Revenue
+
+Visitors
+
+Lead Sources
+
+Best Lead Source
+
+Monthly Leads
+
+Lead Satisfaction
+
+Website Features
+
+Conversion Rate Known
+
+Website Challenges
+
+CRM
+
+CRM Connected
+
+Automation
+
+Analytics
+
+AI Tools
+
+AI Trust
+
+Desired AI Feature
+
+Biggest Obstacle
+
+Desired Improvement
+
+Website Wish
+
+Past Investments
+
+Marketing Spend
+
+Value Rating
+
+Early Access
+
+Interview Interest
+
+Browser
+
+Device
+
+Country
+
+UTM Source
+
+Referrer
+
+Session ID
